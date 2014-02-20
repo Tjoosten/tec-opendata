@@ -1,11 +1,13 @@
 #OpenData @ TEC
 
-As you may know, the TEC are opening up their data. Sadly, they are providing it [here](http://) in a ESRI Shapefile format.
-To allow developpers and open data enthusiast to play with it, I wrote a simple python script that read the files and generate
-json files and GTFS files.
+As you may know, the TEC are opening up their data. Sadly, they are providing it [here](http://geoportail.wallonie.be/geocatalogue?search-theme=theme_30&search-subtheme=soustheme_3040) in a ESRI Shapefile format.
+To allow developpers and open data enthusiasts to play with it, I wrote a simple python script that read the files and generate
+json and GTFS files.
 
 You need two dependencies in order to run the extract.py script (one to read shapefiles and the other to translate Lambert to 
-WGS84). You can install it with pip : 
+WGS84).
+
+You can install them with pip : 
 
 ```
 pip install pyshp
@@ -48,11 +50,11 @@ Contains all the lines provided by the TEC in this format
 
 #GTFS feed
 
-You can find information about GTFS [here](https://developers.google.com/transit/gtfs/). The extract.py create these files : 
-* agency.txt (information about the TEC)
-* stops.txt  (information about the stops)
-* routes.txt (information about the lines)
-* shapes.txt (shape containing all points related to a specific line)
+You can find information about GTFS [here](https://developers.google.com/transit/gtfs/). The extract.py script create these files : 
+* [agency.txt](https://github.com/QKaiser/tec-opendata/blob/master/agency.txt) (information about the TEC)
+* [stops.txt](https://github.com/QKaiser/tec-opendata/blob/master/stops.txt)  (information about the stops)
+* [routes.txt](https://github.com/QKaiser/tec-opendata/blob/master/routes.txt) (information about the lines)
+* [shapes.txt](https://github.com/QKaiser/tec-opendata/blob/master/shapes.txt) (shape containing all points related to a specific line)
 
 
 Feel free to comment and file an issue.
