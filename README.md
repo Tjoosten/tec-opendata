@@ -56,7 +56,11 @@ You can find information about GTFS [here](https://developers.google.com/transit
 * [routes.txt](https://github.com/QKaiser/tec-opendata/blob/master/routes.txt) (information about the lines)
 * [shapes.txt](https://github.com/QKaiser/tec-opendata/blob/master/shapes.txt) (shape containing all points related to a specific line)
 
+#TODO
 
-Feel free to comment and file an issue.
+The stops names provided by the TEC contains the locality AND the street name. Could be nice to find the ultimate regex to separate these in
+two different attributes for enhanced filtering.
+
+Feel free to comment or file an issue.
 
 
