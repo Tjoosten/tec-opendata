@@ -49,9 +49,6 @@ for name, line in zip(shp_lines.records(), shp_lines.shapes()):
 		i+=1
 	lines.append({"id" : "BE.TEC.%s"%(name[0]), "name" : name[1], "xid" : name[2], "type" : name[3], "points" : points})
 
-	print json.dumps(lines)
-	break
-
 with open('stops.json', 'w') as f:
 	f.write(json.dumps(stops, ensure_ascii=False))
 
