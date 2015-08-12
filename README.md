@@ -1,5 +1,7 @@
 #OpenData @ TEC
 
+###This repo is deprecated and doesn't get support anymore
+
 As you may know, the TEC are opening up their data. Sadly, they are providing it [here](http://geoportail.wallonie.be/geocatalogue?search-theme=theme_30&search-subtheme=soustheme_3040) in a ESRI Shapefile format.
 To allow developpers and open data enthusiasts to play with it, I wrote a simple python script that read the files and generate
 json and GTFS files.
